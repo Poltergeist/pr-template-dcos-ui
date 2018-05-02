@@ -1,6 +1,6 @@
 {
   "name": "@specone/pr-template-dcos-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This echos pr template in markdown to create it dynamically",
   "main": "index.js",
   "scripts": {
