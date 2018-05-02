@@ -4,8 +4,24 @@
   "description": "This echos pr template in markdown to create it dynamically",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec './index.js --help' && ./index.js -V",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Poltergeist/pr-template-dcos-ui"
   },
   "author": "",
-  "license": "MIT"
+  "bin": {
+    "pr-template-dcos-ui": "./index.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.17.3",
+    "standard-version": "^4.3.0"
+  },
+  "dependencies": {
+    "commander": "^2.15.1"
+  }
 }
